@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     var runningSum: Int = 0
     var pressCounter: Int = 0
     let maxPress = 12
-    
+
+
     @IBAction func doMathOnPress(sender: AnyObject) {
         
         pressCounter = pressCounter + 1
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
     @IBAction func playButtonPressed(sender: AnyObject) {
         
         if multiplyTextField.text != nil && multiplyTextField != "" {
+            
         
         logoImg.hidden = false
         alienImg.hidden = false
@@ -93,6 +95,8 @@ class ViewController: UIViewController {
     func updateLabel(oldSum: Int, mul: Int, newSum: Int) {
         multiplyLabel.text = "\(oldSum) x \(mul) = \(newSum)"
     }
+
+
 
 
 }
